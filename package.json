@@ -6,8 +6,13 @@
   "scripts": {
     "dev": "npm run client",
     "client": "cd client && npm run dev",
+    "server": "cd server && npm run watch", 
+    "build": "cd client && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  }
 }
